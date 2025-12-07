@@ -275,8 +275,8 @@ This software is provided for **educational purposes only**. The author and cont
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/Bhaveshpooniwala1)
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/bhavesh-pooniwala/)
+- GitHub: [BhaveshPooniwala1](https://github.com/Bhaveshpooniwala1)
+- LinkedIn: [Bhavesh Pooniwala](https://www.linkedin.com/in/bhavesh-pooniwala/)
 
 ## 🙏 Acknowledgments
 
