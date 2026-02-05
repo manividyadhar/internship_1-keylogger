@@ -141,7 +141,7 @@ This project is licensed under the MIT License.
 
 Manividyadhar
 GitHub: https://github.com/manividyadhar
-Manil: manividyadhar143@gmail.com
+Mail: manividyadhar143@gmail.com
 LinkedIn: https://www.linkedin.com/in/manividyadhar/
 
 🛡️ Final Note
