@@ -4,286 +4,147 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## ⚠️ Legal & Ethical Disclaimer
 
-**WARNING**: This project is for **educational purposes only**. 
+⚠️ Legal & Ethical Disclaimer
 
-- ✅ Use only on systems you own
-- ✅ Get explicit written permission before monitoring any device
-- ❌ Unauthorized keylogging is **ILLEGAL** in most jurisdictions
-- ❌ Violates privacy laws and computer fraud statutes
+This project is created strictly for educational purposes only.
 
-**By using this software, you agree to use it responsibly and legally.**
+Rules & Responsibilities
 
-## 📋 Project Overview
+✅ Use only on systems you own
 
-A cross-platform educational keylogger built with Python that demonstrates:
-- Keyboard event monitoring
-- File I/O operations
-- Cross-platform compatibility
-- Logging and data persistence
-- Ethical security research principles
+✅ Obtain explicit permission before monitoring any device
 
-### Features
+❌ Unauthorized keylogging is illegal
 
-- ✨ Cross-platform support (Windows & Linux)
-- 📝 Real-time keystroke logging
-- 🔒 Buffered writing for efficiency
-- 📊 System information logging
-- ⌨️ Special key detection
-- 🛑 Emergency stop (ESC key)
-- 📁 Organized log file management
-- ⏰ Timestamped log files
+❌ Violates privacy and cybersecurity laws
 
-## 🚀 Installation Guide
+⚠️ Misuse can lead to serious legal consequences
 
-### Prerequisites
+By using this software, you agree to follow all applicable laws and ethical standards.
 
-- Python 3.7 or higher
-- pip (Python package manager)
-- Administrator/sudo privileges (for some systems)
+📘 Project Overview
 
-### Step-by-Step Installation
+This project demonstrates how keyboard input monitoring works at a technical level using Python.
+It is intended to help learners understand system-level programming and basic cybersecurity concepts.
 
-#### For Windows:
+Focus Areas
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/Bhaveshpooniwala1/PRODIGY_CS_04.git
-cd educational-keylogger
+Keyboard event capture
 
-# 2. Create virtual environment (recommended)
+File input and output
+
+Logging and data storage
+
+Cross-platform compatibility
+
+Ethical security research
+
+✨ Features
+
+Supports Windows and Linux
+
+Logs keystrokes in real time
+
+Buffered writing for better performance
+
+Captures basic system information
+
+Detects and labels special keys
+
+Emergency stop using ESC key
+
+Automatically creates log directories
+
+Timestamp-based log files
+
+🚀 Installation
+Prerequisites
+
+Python 3.7 or higher
+
+pip package manager
+
+Administrator / sudo access (on some systems)
+
+🪟 Windows Setup
+git clone https://github.com/manividyadhar/internship_1-keylogger.git
+cd internship_1-keylogger
+
 python -m venv venv
 venv\Scripts\activate
 
-# 3. Install dependencies
 pip install -r requirements.txt
-
-# 4. Run the keylogger
 python keylogger.py
-```
 
-#### For Linux:
+🐧 Linux Setup
+git clone https://github.com/manividyadhar/internship_1-keylogger.git
+cd internship_1-keylogger
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/Bhaveshpooniwala1/PRODIGY_CS_04.git
-cd educational-keylogger
-
-# 2. Create virtual environment (recommended)
 python3 -m venv venv
 source venv/bin/activate
 
-# 3. Install dependencies
 pip install -r requirements.txt
-
-# 4. Run the keylogger (may require sudo)
 sudo python3 keylogger.py
-```
 
-## 📖 Usage
+▶️ Usage
 
-### Basic Usage
+Displays an ethical and legal warning
 
-```bash
-# Activate virtual environment first
-python keylogger.py
-```
+Requires user consent before execution
 
-### What Happens:
+Creates a keylogs/ directory if not present
 
-1. Program displays ethical warning
-2. Asks for consent confirmation
-3. Creates `keylogs/` directory if not exists
-4. Starts logging keystrokes
-5. Press **ESC** to stop and save logs
+Logs keystrokes while running
 
-### Output Example
+Press ESC to safely stop logging
 
-```
-[+] Created log directory: keylogs
-[+] Logging to: keylogs/keylog_20241207_143052.txt
-============================================================
-EDUCATIONAL KEYLOGGER - RUNNING
-============================================================
-[*] Keylogger is now active...
-[*] Press ESC to stop logging
-============================================================
-```
-
-## 📁 Project Structure
-
-```
-educational-keylogger/
+📁 Project Structure
+internship_1-keylogger/
 │
-├── keylogger.py          # Main keylogger script
-├── requirements.txt      # Python dependencies
-├── README.md            # Project documentation
-├── LICENSE              # License file
-├── .gitignore          # Git ignore file
+├── keylogger.py
+├── README.md
+├── requirements.txt
+├── .gitignore
 │
-├── keylogs/            # Generated log files directory
-│   ├── keylog_20241207_143052.txt
-│   └── keylog_20241207_154823.txt
-│
-└── docs/               # Additional documentation
-    ├── INSTALLATION.md
-    └── ETHICS.md
-```
+└── keylogs/
 
-## 🔧 Configuration
+📝 Log File Details
 
-### Customization Options
+Each session creates a new log file
 
-In `keylogger.py`, you can modify:
+Includes timestamps and system details
 
-```python
-# Buffer size (keys before writing to file)
-self.buffer_size = 10
+Special keys are clearly labeled for readability
 
-# Log directory name
-log_dir = "keylogs"
+🎯 Learning Outcomes
 
-# Date format
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-```
+By working on this project, you will learn:
 
-## 📊 Log File Format
+Event-driven programming
 
-```
-2024-12-07 14:30:52 - ==================================================
-2024-12-07 14:30:52 - KEYLOGGER SESSION STARTED
-2024-12-07 14:30:52 - ==================================================
-2024-12-07 14:30:52 - System: Windows
-2024-12-07 14:30:52 - Release: 10
-2024-12-07 14:30:52 - hello world[ENTER]
-2024-12-07 14:31:15 - testing[BACKSPACE][BACKSPACE]
-```
+File handling in Python
 
-## 🛠️ Technical Details
+Cross-platform scripting
 
-### Key Components
+Security and privacy ethics
 
-1. **KeyLogger Class**: Main class handling all logging operations
-2. **Event Listeners**: Captures keyboard events using pynput
-3. **Buffer System**: Efficient writing with configurable buffer size
-4. **Log Management**: Timestamped files with system information
+Error handling and logging
 
-### Technologies Used
+Git and GitHub workflow
 
-- **pynput**: Cross-platform keyboard monitoring
-- **logging**: Python's built-in logging framework
-- **datetime**: Timestamp generation
-- **platform**: System information gathering
+📄 License
 
-## 🐛 Troubleshooting
+This project is licensed under the MIT License.
 
-### Common Issues
+👤 Author
 
-**Issue 1: Permission Denied (Linux)**
-```bash
-# Solution: Run with sudo
-sudo python3 keylogger.py
-```
+Manividyadhar
+GitHub: https://github.com/manividyadhar
+Manil: manividyadhar143@gmail.com
+LinkedIn: https://www.linkedin.com/in/manividyadhar/
 
-**Issue 2: Module Not Found**
-```bash
-# Solution: Install dependencies
-pip install -r requirements.txt
-```
+🛡️ Final Note
 
-**Issue 3: Pynput Not Working**
-```bash
-# Linux: Install X11 development libraries
-sudo apt-get install python3-xlib
-```
-
-**Issue 4: Virtual Environment Issues**
-```bash
-# Recreate virtual environment
-rm -rf venv
-python -m venv venv
-source venv/bin/activate  # Linux
-venv\Scripts\activate     # Windows
-```
-
-## 📈 Learning Outcomes
-
-By completing this project, you will learn:
-
-- ✅ Event-driven programming
-- ✅ File I/O operations in Python
-- ✅ Cross-platform development
-- ✅ Security research ethics
-- ✅ System-level programming
-- ✅ Error handling and logging
-- ✅ Buffer management
-- ✅ Git version control
-
-## 🚀 Deployment Guide
-
-### GitHub Deployment
-
-See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed instructions.
-
-### Quick Deploy
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Educational keylogger project"
-git branch -M main
-git remote add origin https://github.com/Bhaveshpooniwala1/PRODIGY_CS_04.git
-git push -u origin main
-```
-
-## 🎓 Advanced Features to Add
-
-1. **Email Notifications**: Send logs via email
-2. **Encryption**: Encrypt log files
-3. **GUI Interface**: Build a Tkinter interface
-4. **Remote Logging**: Send logs to remote server
-5. **Screenshot Capture**: Capture screenshots on specific triggers
-6. **Application Tracking**: Track active applications
-7. **Statistical Analysis**: Analyze typing patterns
-8. **Stealth Mode**: Hide console window
-
-## 📚 Additional Resources
-
-- [Python pynput Documentation](https://pynput.readthedocs.io/)
-- [Ethical Hacking Guide](https://www.eccouncil.org/ethical-hacking/)
-- [Python Logging Documentation](https://docs.python.org/3/library/logging.html)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
-## ⚖️ Legal Notice
-
-This software is provided for **educational purposes only**. The author and contributors are not responsible for any misuse or damage caused by this program. Users are solely responsible for compliance with applicable laws.
-
-## 👤 Author
-
-**Your Name**
-- GitHub: [BhaveshPooniwala1](https://github.com/Bhaveshpooniwala1)
-- LinkedIn: [Bhavesh Pooniwala](https://www.linkedin.com/in/bhavesh-pooniwala/)
-
-## 🙏 Acknowledgments
-
-- Python Software Foundation
-- pynput library developers
-- Security research community
-
----
-
-**Remember**: With great power comes great responsibility. Use this knowledge ethically! 🛡️
+Knowledge is powerful—use it responsibly.
+This project exists to educate, not to invade privacy.
